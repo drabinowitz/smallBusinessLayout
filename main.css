@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: arial;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*work starts here*/
+
+/*universals*/
+
+a{
+	text-decoration: none;
+}
+
+/*header bar*/
+#foreground{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+#navBar{
+	position: relative;
+	height: 80px;
+	background-color: grey;
+	width: 100%;
+	top: 0;
+}
+
+#navBar *{
+	display: inline-block;
+}
+
+#logo,#title{
+	float: left;
+}
+
+#logo{
+	height: 50px;
+}
+
+#signin,#checkout{
+	float: right;
+}
+
+#checkout img{
+	height: 20px;
+}
+
+/*rotating banner*/
+
+#banner{
+	position: relative;
+	background-color: lightblue;
+	width: 100%;
+	overflow: auto;
+}
+
+/*search tools*/
+
+#browse,#search{
+	display: inline-block;
+}
+
+#browse{
+	float: left;
+}
+
+#search{
+	float: right;
+}
+
+#rotate{
+	position: relative;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px 15px;
+}
+
+/*banner itself*/
+
+#album{
+	display: inline-block;
+	clear: left;
+	float: left;
+	height: 100px;
+}
+
+#description{
+	display: inline-block;
+	float: left;
+	background-color: white;
+	border: 1px solid black;
+	width: 75%;
+}
+
+/*sell records*/
+
+#sell{
+	position: relative;
+	float: right;
+	clear: both;
+}
+
+/*document body*/
+
+#body{
+	position: relative;
+	height: 100%;
+}
+
+#leftBar,#center,#rightBar{
+	display: inline-block;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+
+/*left bar*/
+
+#leftBar{
+	width: 170px;
+	background-color: green;
+	border-right: 1px solid black;
+	-webkit-box-sizing:border-box;
+}
+
+/*center body*/
+
+#center{
+	width: 580px;
+	background-color: violet;
+	border-right: 1px solid black;
+	-webkit-box-sizing:border-box;
+}
+
+#storyImages{
+	float: left;
+}
+
+.storyImage{
+	height: 40px;
+	display: block;
+}
+
+#storyBody{
+	float: left;
+	width: 300px;
+}
+
+/*right bar*/
+
+#rightBar{
+	width: 170px;
+	background-color: orange;
+	border-left: 1px solid black;
+	-webkit-box-sizing:border-box;
+}
+
+#twitterFeed{
+	width: 150px;
+}
