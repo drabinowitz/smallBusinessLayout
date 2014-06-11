@@ -65,7 +65,7 @@ a{
 	background-size: 1200px 100%;
 	width: 100%;
 	top: 0;
-	bottom: 0;
+	height: 1100px;
 }
 
 /*header bar*/
@@ -73,12 +73,13 @@ a{
 #foreground{
 	position: absolute;
 	top: 0;
-	bottom: 0;
+	height: 1100px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 920px;
+	-webkit-box-shadow: -30px 0 30px #000, 30px 0 30px #000, -5px 0 5px #000 inset, 5px 0 5px #000 inset;
 }
 #navBar{
 	position: relative;
@@ -196,20 +197,27 @@ a{
 /*document body*/
 
 #body{
-	position: relative;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	bottom: 0;
+	top: 317px;
 }
 
 #leftBar,#center,#rightBar{
 	display: inline-block;
 	float: left;
-	position: relative;
-	height: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
 }
 
 /*left bar*/
 
 #leftBar{
 	width: 200px;
+	left: 0;
 	background-color: #E6E6E6;
 	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
@@ -219,6 +227,7 @@ a{
 
 #center{
 	width: 520px;
+	left: 200px;
 	background-color: violet;
 	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
@@ -242,6 +251,7 @@ a{
 
 #rightBar{
 	width: 200px;
+	right: 0;
 	background-color: orange;
 	border-left: 1px solid black;
 	-webkit-box-sizing:border-box;
@@ -249,10 +259,4 @@ a{
 
 #twitterFeed{
 	width: 150px;
-}
-
-/* shadowing */
-
-#foreground{
-	-webkit-box-shadow: -30px 0 30px #000, 30px 0 30px #000, -5px 0 5px #000 inset, 5px 0 5px #000 inset;
 }
