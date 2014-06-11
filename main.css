@@ -57,13 +57,22 @@ a{
 	text-decoration: none;
 }
 
+/*background*/
+
+body{
+	background: #b2b2b2 url("images/recordStore.bmp") 0 no-repeat;
+	height: 800px;
+}
+
 /*header bar*/
+
 #foreground{
-	position: fixed;
+	position: relative;
 	top: 0;
-	bottom: 0;
-	margin-left: 500px;
-	margin-right: 500px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 920px;
 }
 #navBar{
 	position: relative;
@@ -71,22 +80,39 @@ a{
 	background-color: grey;
 	width: 100%;
 	top: 0;
+	background: -webkit-linear-gradient(#DBDBDB,#AFAFAF);
+	box-sizing: border-box;
+	border-bottom: 5px solid #666699;
 }
 
 #navBar *{
-	display: inline-block;
+	display: inline-block;	
 }
 
 #logo,#title{
 	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
 }
 
 #logo{
 	height: 50px;
 }
 
+#title{
+	padding-top: 9px;
+	font-size: 26px;
+	font-family: arial;
+}
+
 #signin,#checkout{
 	float: right;
+	margin-right: 15px;
+	margin-top: 27px;
+}
+
+#checkout{
+	margin-top: 21px;
 }
 
 #checkout img{
@@ -97,7 +123,7 @@ a{
 
 #banner{
 	position: relative;
-	background-color: lightblue;
+	background: -webkit-linear-gradient(360deg,#00004C 65%,#455088);
 	width: 100%;
 	overflow: auto;
 }
@@ -110,10 +136,17 @@ a{
 
 #browse{
 	float: left;
+	margin-top: 14px;
+	margin-left: 36px;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
 }
 
 #search{
 	float: right;
+	margin-right: 10px;
+	margin-top: 11px;
 }
 
 #rotate{
@@ -121,7 +154,8 @@ a{
 	clear: both;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px 15px;
+	padding: 20px 15px 10px 15px;
+	overflow: auto;
 }
 
 /*banner itself*/
@@ -130,7 +164,8 @@ a{
 	display: inline-block;
 	clear: left;
 	float: left;
-	height: 100px;
+	height: 146px;
+	margin-left: 40px;
 }
 
 #description{
@@ -147,27 +182,29 @@ a{
 	position: relative;
 	float: right;
 	clear: both;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	color: white;
 }
 
 /*document body*/
 
 #body{
 	position: relative;
-	height: 100%;
 }
 
 #leftBar,#center,#rightBar{
 	display: inline-block;
 	float: left;
 	position: relative;
-	height: 100%;
+	height: 500px;
 }
 
 /*left bar*/
 
 #leftBar{
-	width: 170px;
-	background-color: green;
+	width: 200px;
+	background-color: #E6E6E6;
 	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
 }
@@ -175,7 +212,7 @@ a{
 /*center body*/
 
 #center{
-	width: 580px;
+	width: 520px;
 	background-color: violet;
 	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
@@ -198,7 +235,7 @@ a{
 /*right bar*/
 
 #rightBar{
-	width: 170px;
+	width: 200px;
 	background-color: orange;
 	border-left: 1px solid black;
 	-webkit-box-sizing:border-box;
@@ -206,4 +243,10 @@ a{
 
 #twitterFeed{
 	width: 150px;
+}
+
+/* shadowing */
+
+#foreground{
+	-webkit-box-shadow: -30px 0 30px #000, 30px 0 30px #000, -5px 0 5px #000 inset, 5px 0 5px #000 inset;
 }
