@@ -61,7 +61,7 @@ a{
 
 #background{
 	position: absolute;
-	background: #b2b2b2 url("images/recordStore.bmp") 50% 0 no-repeat;
+	background: rgba(229, 175, 150, 0.69) url("images/recordStore.bmp") 50% 0 no-repeat;
 	background-size: 1200px 100%;
 	width: 100%;
 	top: 0;
@@ -79,15 +79,14 @@ a{
 	margin-left: auto;
 	margin-right: auto;
 	width: 920px;
-	-webkit-box-shadow: -30px 0 30px #000, 30px 0 30px #000, -5px 0 5px #000 inset, 5px 0 5px #000 inset;
+	-webkit-box-shadow: -30px 0 30px rgba(0,0,0,0.7), 30px 0 30px rgba(0,0,0,0.7);
 }
 #navBar{
 	position: relative;
 	height: 80px;
-	background-color: grey;
 	width: 100%;
 	top: 0;
-	background: -webkit-linear-gradient(#DBDBDB,#AFAFAF);
+	background: -webkit-linear-gradient(#DBDBDB,rgba(0,0,0,0.8));
 	box-sizing: border-box;
 	border-bottom: 5px solid #666699;
 }
@@ -204,23 +203,25 @@ a{
 	top: 317px;
 }
 
-#leftBar,#center,#rightBar{
-	display: inline-block;
-	float: left;
+#center,#rightBar{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	height: 100%;
 }
 
 /*left bar*/
 
 #leftBar{
-	width: 200px;
-	left: 0;
+	position: absolute;
+	width: 220px;
+	left: -10px;
+	top: 307px;
+	bottom: 0px;
 	background-color: #E6E6E6;
 	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
+	z-index: 3;
+	-webkit-box-shadow: 15px -10px 5px rgba(0,0,0,0.4);
 }
 
 /*center body*/
@@ -259,4 +260,32 @@ a{
 
 #twitterFeed{
 	width: 150px;
+}
+
+/*footer*/
+
+#footer{
+	position: fixed;
+	background-color: #D6D6D6;
+	border: 1px solid #727C9A;
+	border-bottom: 0;
+	bottom: 0;
+	width: 1200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top{
+	float: left;
+	margin-left: 30px;
+}
+
+#copyright{
+	float: right;
+	margin-right: 30px;
 }
