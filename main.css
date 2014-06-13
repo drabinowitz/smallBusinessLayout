@@ -65,7 +65,7 @@ a{
 	background-size: 1200px 100%;
 	width: 100%;
 	top: 0;
-	height: 1100px;
+	height: 900px;
 }
 
 /*header bar*/
@@ -73,7 +73,7 @@ a{
 #foreground{
 	position: absolute;
 	top: 0;
-	height: 1100px;
+	height: 900px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -272,7 +272,6 @@ color: rgb(44, 77, 51);
 #center{
 	width: 720px;
 	left: 0px;
-	border-right: 1px solid black;
 	-webkit-box-sizing:border-box;
 }
 
@@ -288,6 +287,7 @@ color: rgb(44, 77, 51);
 	height: 123px;
 	display: block;
 	margin: 20px -67px 0px 0px;
+	border: 3px solid black;
 }
 
 .storyImage:nth-child(2){
@@ -322,7 +322,6 @@ color: rgb(44, 77, 51);
 	width: 200px;
 	right: 0;
 	background-color: orange;
-	border-left: 1px solid black;
 	-webkit-box-sizing:border-box;
 }
 
