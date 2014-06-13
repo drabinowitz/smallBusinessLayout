@@ -285,7 +285,7 @@ color: rgb(44, 77, 51);
 .storyImage {
 	height: 123px;
 	display: block;
-	margin: 20px -67px 0px 0px;
+	margin: 11px -72px 0px 0px;
 	border: 3px solid black;
 }
 
@@ -320,8 +320,29 @@ color: rgb(44, 77, 51);
 #rightBar{
 	width: 200px;
 	right: 0;
-	background-color: orange;
+	background: -webkit-linear-gradient(rgb(254, 201, 158),rgb(22, 78, 56));
+	border: 3px solid rgb(60, 60, 60);
+	border-radius: 10px;
 	-webkit-box-sizing:border-box;
+}
+
+#locationHoursTitle{
+	color: rgb(65, 59, 47);
+	margin: 5px;
+}
+
+#location, #hours {
+padding-left: 10px;
+font-size: 14px;
+color: rgb(65, 59, 47);
+}
+
+#googleMap {
+	margin: 15px 30px;
+}
+
+#facebook, #twitter {
+	margin: 0px 21px;
 }
 
 /*footer*/
