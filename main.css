@@ -184,8 +184,19 @@ a{
 	display: inline-block;
 	float: left;
 	background-color: white;
-	border: 1px solid black;
 	width: 75%;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding: 5px;
+	color: #292828;
+}
+
+h4.bio {
+background: #D3D3D3;
+}
+
+p.bio {
+color: rgb(44, 77, 51);
 }
 
 /*sell records*/
@@ -242,7 +253,7 @@ a{
 	-webkit-box-sizing: border-box;
 	padding: 5px;
 	margin: 10px 5px;
-	background: -webkit-linear-gradient(rgba(148, 115, 106, 1),rgba(194, 163, 155, 1));
+	background: -webkit-linear-gradient(rgb(190, 151, 119),rgb(241, 164, 83));
 	border-radius: 3px;
 }
 
@@ -273,15 +284,36 @@ a{
 	clear: right;
 }
 
-
-
-.storyImage{
-	height: 40px;
+.storyImage {
+	height: 123px;
 	display: block;
+	margin: 20px -67px 0px 0px;
 }
 
-#storyBody{
-	width: 300px;
+.storyImage:nth-child(2){
+	height: 151px;
+}
+
+#storyBody {
+	width: 335px;
+	background: rgb(253, 179, 102);
+	padding: 15px 75px;
+	margin: 10px;
+	box-sizing: border-box;
+	border-radius: 138px 0px;
+	text-align: justify;
+}
+
+
+/*owner story*/
+
+#storyTitle{
+	background: -webkit-linear-gradient(rgba(78, 168, 134, 0),rgb(0, 71, 57));
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 300px;
+	color: white;
+	font-size: 25px;
 }
 
 /*right bar*/
@@ -292,10 +324,6 @@ a{
 	background-color: orange;
 	border-left: 1px solid black;
 	-webkit-box-sizing:border-box;
-}
-
-#twitterFeed{
-	width: 150px;
 }
 
 /*footer*/
